@@ -1,0 +1,30 @@
+GET http://localhost:5278/games
+
+###
+GET http://localhost:5278/games/9
+
+###
+POST http://localhost:5278/games
+Content-Type: application/json
+
+{
+    "name": "Test",
+    "genre": "Kids",
+    "price": 39.99,
+    "releasedDate":"2015-05-03"
+}
+
+
+###
+PUT http://localhost:5278/games/1
+Content-Type: application/json
+
+{
+    "name": "Street Fighting",
+    "genre": "Fighting",
+    "price": 20.99,
+    "releasedDate": "1992-07-15"
+}
+
+###
+DELETE http://localhost:5278/games/2
